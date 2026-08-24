@@ -20,9 +20,19 @@
       <span class="brand-eyebrow">Live at</span>
       <h1 id="eventTitle" contenteditable="true" spellcheck="false">Friday Night Game Changer</h1>
     </div>
-    <nav class="tabs" role="tablist">
-      <button class="tab-btn active" data-view="board" role="tab">Round 1 · Board</button>
-      <button class="tab-btn" data-view="prompt" role="tab">Rounds 2–3 · Prompt</button>
+    <nav class="round-tabs" role="tablist">
+      <button class="round-pill active" data-round="round1" type="button">
+        <span class="round-pill-num">Round 1</span>
+        <span class="round-pill-name">Trivia Board</span>
+      </button>
+      <button class="round-pill" data-round="round2" type="button">
+        <span class="round-pill-num">Round 2</span>
+        <span class="round-pill-name">Talent Show</span>
+      </button>
+      <button class="round-pill" data-round="round3" type="button">
+        <span class="round-pill-num">Round 3</span>
+        <span class="round-pill-name">Make Some Noise</span>
+      </button>
       <button class="setup-btn" id="setupBtn" type="button">⚙ Setup</button>
     </nav>
   </header>
@@ -31,24 +41,81 @@
 
     <section class="main-panel">
 
+      <!-- ROUND 1: Jeopardy-style board -->
       <div class="view active" id="boardView">
         <div class="board-frame">
           <div class="board-grid" id="boardGrid"><!-- injected --></div>
         </div>
       </div>
 
+      <!-- ROUNDS 2 & 3: Prompt console -->
       <div class="view" id="promptView">
-        <div class="prompt-editor">
-          <label class="field-label" for="promptInput">Prompt for the room</label>
-          <textarea id="promptInput" rows="3" placeholder="e.g. Draw &ldquo;a raccoon filing taxes&rdquo; in 60 seconds…"></textarea>
-          <div class="prompt-actions">
-            <button id="showPromptBtn" class="btn btn-gold" type="button">Show on screen</button>
-            <button id="clearPromptBtn" class="btn btn-ghost" type="button">Clear</button>
-          </div>
+        <div class="round-banner">
+          <span class="brand-eyebrow">Now Running</span>
+          <h2 id="roundBannerTitle">Round 2 · Talent Show</h2>
         </div>
-        <div class="prompt-display" id="promptDisplay">
-          <span class="prompt-display-eyebrow">Now Playing</span>
-          <p id="promptDisplayText">Waiting for a prompt&hellip;</p>
+
+        <div class="prompt-columns">
+
+          <div class="prompt-main">
+            <div class="prompt-display" id="promptDisplay">
+              <span class="prompt-display-eyebrow">Prompt</span>
+              <p id="promptDisplayText">Add prompts to the queue to get started&hellip;</p>
+              <div class="prompt-meta">
+                <div class="meta-item">
+                  <span class="meta-label">On the spot</span>
+                  <span class="meta-value" id="onTheSpotDisplay">—</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Judged by</span>
+                  <span class="meta-value" id="judgedByDisplay">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue-nav">
+              <button id="prevPromptBtn" class="btn btn-ghost" type="button">← Prev</button>
+              <span id="queuePosition" class="queue-position">0 / 0</span>
+              <button id="nextPromptBtn" class="btn btn-gold" type="button">Next →</button>
+            </div>
+          </div>
+
+          <div class="prompt-side">
+
+            <div class="side-block">
+              <label class="field-label" for="promptQueueInput">Add prompts (one per line)</label>
+              <textarea id="promptQueueInput" rows="3" placeholder="A raccoon filing taxes&#10;The sound of regret"></textarea>
+              <button id="addToQueueBtn" class="btn btn-gold btn-small" type="button">+ Add to queue</button>
+              <ul class="queue-list" id="queueList"><!-- injected --></ul>
+            </div>
+
+            <div class="side-block">
+              <label class="field-label" for="onTheSpotSelect">On the spot</label>
+              <select id="onTheSpotSelect"><option value="">— none —</option></select>
+
+              <label class="field-label" style="margin-top:12px;" for="judgedByInput">Judged by</label>
+              <input id="judgedByInput" type="text" placeholder="e.g. the room votes" />
+            </div>
+
+            <div class="side-block">
+              <label class="field-label">Timer</label>
+              <div class="timer-display" id="timerDisplay">1:00</div>
+              <div class="timer-controls">
+                <input id="timerSecondsInput" type="number" value="60" min="5" step="5" title="Seconds" />
+                <button id="timerStartBtn" class="btn btn-gold btn-small" type="button">Start</button>
+                <button id="timerResetBtn" class="btn btn-ghost btn-small" type="button">Reset</button>
+              </div>
+            </div>
+
+            <div class="side-block">
+              <label class="field-label" for="awardAmount">Award points</label>
+              <div class="award-row">
+                <input id="awardAmount" type="number" value="100" />
+                <button id="awardPointsBtn" class="btn btn-gold btn-small" type="button">Award to on-the-spot</button>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -96,8 +163,11 @@
 
     <div class="setup-tools">
       <button id="fillValuesBtn" class="btn btn-ghost btn-small" type="button">Auto-fill values 100–500</button>
-      <button id="resetBoardBtn" class="btn btn-danger btn-small" type="button">Reset entire board</button>
+      <button id="exportBoardBtn" class="btn btn-ghost btn-small" type="button">Export board as file</button>
+      <button id="importBoardBtn" class="btn btn-ghost btn-small" type="button">Import board from file</button>
+      <input type="file" id="importBoardInput" accept="application/json" style="display:none" />
       <button id="resetUsedBtn" class="btn btn-danger btn-small" type="button">Mark all clues unused</button>
+      <button id="resetBoardBtn" class="btn btn-danger btn-small" type="button">Reset entire board</button>
     </div>
 
     <div class="setup-categories" id="setupCategories"><!-- injected --></div>
