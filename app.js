@@ -4,7 +4,8 @@
   var STORAGE_KEY = "gameNightState_v2";
   var DEFAULT_VALUES = [100, 200, 300, 400, 500];
   var ROUND_LABELS = {
-    round2: "Round 2 · Talent Show",
+    round1: "Round 1 · CANINE LORE",
+    round2: "Round 2 · SIT, SPEAK, ROLL OVER",
     round3: "Round 3 · BARK BARK, BITCH",
   };
 
