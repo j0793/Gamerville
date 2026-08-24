@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Game Night — Host Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="stage-glow"></div>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-eyebrow">Live at</span>
+      <h1 id="eventTitle" contenteditable="true" spellcheck="false">Friday Night Game Changer</h1>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab-btn active" data-view="board" role="tab">Round 1 · Board</button>
+      <button class="tab-btn" data-view="prompt" role="tab">Rounds 2–3 · Prompt</button>
+      <button class="setup-btn" id="setupBtn" type="button">⚙ Setup</button>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <section class="main-panel">
+
+      <div class="view active" id="boardView">
+        <div class="board-frame">
+          <div class="board-grid" id="boardGrid"><!-- injected --></div>
+        </div>
+      </div>
+
+      <div class="view" id="promptView">
+        <div class="prompt-editor">
+          <label class="field-label" for="promptInput">Prompt for the room</label>
+          <textarea id="promptInput" rows="3" placeholder="e.g. Draw &ldquo;a raccoon filing taxes&rdquo; in 60 seconds…"></textarea>
+          <div class="prompt-actions">
+            <button id="showPromptBtn" class="btn btn-gold" type="button">Show on screen</button>
+            <button id="clearPromptBtn" class="btn btn-ghost" type="button">Clear</button>
+          </div>
+        </div>
+        <div class="prompt-display" id="promptDisplay">
+          <span class="prompt-display-eyebrow">Now Playing</span>
+          <p id="promptDisplayText">Waiting for a prompt&hellip;</p>
+        </div>
+      </div>
+
+    </section>
+
+    <aside class="scoreboard">
+      <div class="scoreboard-head">
+        <h2>Scoreboard</h2>
+      </div>
+      <div class="add-contestant">
+        <input id="newContestantName" type="text" placeholder="Add contestant…" />
+        <button id="addContestantBtn" class="btn btn-gold btn-small" type="button">Add</button>
+      </div>
+      <ul class="contestant-list" id="contestantList"><!-- injected --></ul>
+    </aside>
+
+  </main>
+</div>
+
+<!-- Clue reveal overlay -->
+<div class="overlay" id="clueOverlay">
+  <div class="clue-card">
+    <div class="clue-top">
+      <span class="clue-category" id="clueCategory">Category</span>
+      <span class="clue-value" id="clueValue">$200</span>
+    </div>
+    <div class="clue-body">
+      <p class="clue-stage-label" id="clueStageLabel">Question</p>
+      <p class="clue-text" id="clueText">Clue text goes here</p>
+    </div>
+    <div class="clue-actions">
+      <button id="revealAnswerBtn" class="btn btn-gold" type="button">Reveal Answer</button>
+      <button id="closeClueBtn" class="btn btn-ghost" type="button">Close &amp; Mark Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- Setup overlay -->
+<div class="overlay" id="setupOverlay">
+  <div class="setup-card">
+    <div class="setup-head">
+      <h2>Board Setup</h2>
+      <button id="closeSetupBtn" class="btn btn-ghost btn-small" type="button">Done</button>
+    </div>
+
+    <div class="setup-tools">
+      <button id="fillValuesBtn" class="btn btn-ghost btn-small" type="button">Auto-fill values 100–500</button>
+      <button id="resetBoardBtn" class="btn btn-danger btn-small" type="button">Reset entire board</button>
+      <button id="resetUsedBtn" class="btn btn-danger btn-small" type="button">Mark all clues unused</button>
+    </div>
+
+    <div class="setup-categories" id="setupCategories"><!-- injected --></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
