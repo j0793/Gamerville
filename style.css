@@ -415,17 +415,19 @@ body{
 
 .timer-controls{
   display:flex;
+  flex-wrap:wrap;
   gap:6px;
 }
-.timer-controls input{ width:64px; flex-shrink:0; text-align:center; }
-.timer-controls button{ flex:1; }
+.timer-controls input{ width:64px; flex:0 0 64px; min-width:0; text-align:center; }
+.timer-controls button{ flex:1 1 80px; min-width:0; padding-left:8px; padding-right:8px; }
 
 .award-row{
   display:flex;
-  gap:6px;
+  flex-direction:column;
+  gap:8px;
 }
-.award-row input{ width:64px; flex-shrink:0; text-align:center; }
-.award-row button{ flex:1; }
+.award-row input{ width:100%; text-align:center; }
+.award-row button{ width:100%; }
 
 /* ---------- Scoreboard ---------- */
 
