@@ -1,20 +1,12 @@
 # Jackie’s Birthday Game Changer
-The idea is simple. Create a living, working, game changer-style event, but the entire party gets to participate. Potentially have a **github pages app** that allows users to participate. The app first and foremost would work for the host to manage the points and interactions of the game. Additionally, users should be able to track their scores or get puzzle hints, etc with their phones.
+This page contains the content for the birthday bash being held for a dear friend.
 
-### App:
-- GH Pages
-- Jackbox style room? Where everyone can contribute?
 ---
 
-## Host: Rotating?
-For now, Julian but possibly rotating.
-
 ## Contestants: Rotating Format
-Jackie and volunteers. Potentially who can beat Jackie? Or if she arrives at a certain point total, make it easy for people to get points but make it tough (and rewarding) for Jackie to accumulate points
+Jackie will be earning points, with others competing to gain more points, with potentially more than just a few contestants.
 
 ## Absolute Requirements:
-
-- Rules of Engagement
 - At least 3-4 people to answer questions (Need a buzzer somehow)
 - Determine a twist or some sort of subversion
 - Points, a way to track or display at least to the host
@@ -27,9 +19,8 @@ Jackie and volunteers. Potentially who can beat Jackie? Or if she arrives at a c
 
 - Mini games, mario party style. As few props as possible.
 - Build up towards a big point threshold then reverse it at the end Brennan style
-- Drawing contest, judged by audience (send scores via GH pages app?)
+- Drawing contest, judged by audience
 - Jeopardy
-- Bingo
 
 ## Rounds:
 
@@ -42,17 +33,21 @@ Jackie and volunteers. Potentially who can beat Jackie? Or if she arrives at a c
 
 ### R2: Talent Show
 
+- Get prompts somehow, have people draw on a whiteboard, have the audience determine winners.
+
 ### R3: Noise Time
 
+- Get prompts, have people act them out, host judges.
 
 ## Final Win Condition: 
 - Point threshold
 - Have points accrue in background aside from answering questions
 - Have points also decrease when saying key phrases
-- Swear jar adjacent? Make it related to Cuba? Music?
-- Category of points, Music, Cuban/Spanish, Hair, Stars
+- Swear jar adjacent? Make it related to topics Jackie is into or commonly says
 
 ## Script:
+
+- TBD
 
 
 
