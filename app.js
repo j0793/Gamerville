@@ -5,7 +5,7 @@
   var DEFAULT_VALUES = [100, 200, 300, 400, 500];
   var ROUND_LABELS = {
     round2: "Round 2 · Talent Show",
-    round3: "Round 3 · Make Some Noise",
+    round3: "Round 3 · BARK BARK, BITCH",
   };
 
   // ---------- State ----------
@@ -21,7 +21,7 @@
 
   function defaultState() {
     return {
-      eventTitle: "Friday Night Game Changer",
+      eventTitle: "Are You Smarter Than A Shiba Inu",
       contestants: [],
       categories: [
         defaultCategory("Category 1"),
