@@ -33,7 +33,14 @@ Jackie will be earning points, with others competing to gain more points, with p
 
 ### R2: Talent Show
 
+Prompts:
+- Kill Jackie: Make the audience laugh with an improvised joke. You get 3 tries.
+- Vincent Van Hedge: Make your best attempt at a Hedgie Drawing
+- Draw the secret passphrase. It MUST include red hair though or DQ
+
+
 - Get prompts somehow, have people draw on a whiteboard, have the audience determine winners.
+
 
 ### R3: Noise Time
 
