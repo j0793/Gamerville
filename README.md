@@ -1,61 +1,129 @@
-# Jackie’s Birthday Game Changer
-This page contains the content for the birthday bash being held for a dear friend.
+# Starry Game Night Extravaganza Ultimate - Host Outline
+
+**Format:** Round 1 Trivia (Jeopardy-style) -> Round 2 Bark Bark, Bitch
+**Host:** Snooka, X
+**Players:** Starry, Player of Starry's Choice #1, Player of Starry's Choice #2, Player of Starry's Choice #3
+**Tech setup:** Laptop screen-shared to living room TV, host console open in browser
 
 ---
 
-## Contestants: Rotating Format
-Jackie will be earning points, with others competing to gain more points, with potentially more than just a few contestants.
+## Pre-Show Checklist
 
-## Absolute Requirements:
-- At least 3-4 people to answer questions (Need a buzzer somehow)
-- Determine a twist or some sort of subversion
-- Points, a way to track or display at least to the host
-- Co-op and pvp together at the same time
+- [ ] Board categories/clues entered in Setup
+- [ ] Contestants added to scoreboard
+- [ ] Round 2 prompt queue loaded
+- [ ] Make big tv second monitor
 
-## Soft-Reqs/Modify:
-- Visible scoreboard
+---
 
-## Potential Events:
+## Core Structure:
 
-- Mini games, mario party style. As few props as possible.
-- Build up towards a big point threshold then reverse it at the end Brennan style
-- Drawing contest, judged by audience
-- Jeopardy
-
-## Rounds:
-
-### R1: Trivia (Wild Jeopardy?)
-- Jeopardy style board:
-
-- 5 categories
-- 5 clues
-- Accumulated points at the end can be gambled, maybe providing secret advantage later
-
-### R2: Talent Show
-
-Prompts:
-- Kill Jackie: Make the audience laugh with an improvised joke. You get 3 tries.
-- Vincent Van Hedge: Make your best attempt at a Hedgie Drawing
-- Draw the secret passphrase. It MUST include red hair though or DQ
+- Intro
+- Run a round of Jackiepardy
+- Form teams for next round, teams of [4?] and one team captain.
+- Each member will have a chance to earn points
+- Run a round of Noise some Makes
+- Points carry over into each round
 
 
-- Get prompts somehow, have people draw on a whiteboard, have the audience determine winners.
+## Cold Open
 
 
-### R3: Noise Time
+> "Welcome, everyone, to Starry Game Night Extravaganza Ultimate. Your skills will be tested, your wits might reach their end, who knows.
 
-- Get prompts, have people act them out, host judges.
+**Transition line:** *"Let's get ready to fly into the first round."*
 
-## Final Win Condition: 
-- Point threshold
-- Have points accrue in background aside from answering questions
-- Have points also decrease when saying key phrases
-- Swear jar adjacent? Make it related to topics Jackie is into or commonly says
+---
 
-## Script:
+## Round 1 - Trivia Board
 
-- TBD
+**Structure:** 5 categories x 5 clues, values 1-5 points, standard board rules.
 
+> "Here's how this works. Someone picks a category and a value, I read the clue, first correct answer gets the points. Get it wrong, and it opens up to the table. Raise your hand to answer the question, first person to get their hand completely vertical wins the chance to answer. Let's go."
+
+**Host notes:**
+- Open the app to the **Round 1 - Trivia Board** tab before this section starts
+- Click a value -> read the clue aloud -> reveal answer -> close & mark done
+- Award points manually via the scoreboard on the right
+
+
+**Transition line:** *That's all for this round, hope you all are ready to get this place humid.*
+---
+
+## Round 2 - Talent Show/Noise Some Makes
+
+**Structure:** Prompt-based challenges (charades), judged by the host.
+
+> New round, new rules. I'm going to give you a prompt, you've got [60?] seconds, you will be judged.
+
+**Host notes:**
+- Switch app to **Round 2 - Talent Show** tab
+- Prompts are pre-loaded in the queue - click **Next ->** to advance
+- Set "On the spot" to the current player BEFORE each prompt so the app shows their name
+- Set "Judged by" if using a rotating judge or audience vote
+- Start the timer when the prompt is shown
+- Use **Award to on-the-spot** to give points once judging is done
+
+**Prompts**:
+(puttin down base ideas, change these to StarryCore)
+
+
+Emotional rollercoaster:
+- I will give an activity to act out. I will call out emotions every (15-20) seconds, adjust your acting.
+
+Press conference:
+- You all will be the board of directors, defend your corporate honor from my judgement.
+
+Living statue:
+- Prompt says pose, team leader makes it, teams bid on pose.
+
+Drawing contest:
+- Draw based on a prompt, host judges. Can be only team captain or they can elect someone to draw. 
+- One dry erase board per team
+
+Sell me Your Sole:
+- Host has 30 (Points) dollars to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
+
+
+- Prompts:
+-- Buttering Toast
+-- Assembling Furniture
+- Emotions:
+- Angry
+- Happy
+- Heartbroken
+
+
+- Drawing Prompts:
+- Choose between these prompts for drawing:
+- Draw a block of cheese.
+- Draw a mouse.
+- Draw a hippo.
+- Draw a spongebob.
+- Draw a patrick (spongebob).
+- Draw a maneki neko (lucky cat)
+- Draw a fox.
+- Draw a shiba.
+- Draw a birthday cake.
+- Draw a jack frost.
+- Draw a kirby.
+- Draw mario.
+- Draw a Link.
+- Draw a Zelda.
+- Draw a hamburger.
+- Draw a hollow knight.
+- Draw a hornet (silksong)
+
+
+
+## Wrap-Up
+> "Let's check the board."
+- Reveal final scoreboard
+- Announce winner, hand out bragging rights.
+---
+## Notes:
+- Decorate the house like a game show
+- Make some contenstant podiums
 
 
 
