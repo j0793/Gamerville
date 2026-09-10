@@ -1,11 +1,10 @@
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "gameNightState_v2";
-  var DEFAULT_VALUES = [100, 200, 300, 400, 500];
+  var STORAGE_KEY = "gameNightState_v3";
+  var DEFAULT_VALUES = [1, 2, 3, 4, 5];
   var ROUND_LABELS = {
-    round2: "Round 2 · Sit, Speak, Roll Over",
-    round3: "Round 3 · Bark Bark, Bitch",
+    round2: "Round 2 · Bark, Bark, Bitch",
   };
 
   // ---------- State ----------
@@ -21,7 +20,7 @@
 
   function defaultState() {
     return {
-      eventTitle: "Friday Night Game Changer",
+      eventTitle: "Starry Game Night Extravaganza Ultimate",
       contestants: [],
       categories: [
         defaultCategory("Category 1"),
@@ -36,7 +35,6 @@
       timerSeconds: 60,
       rounds: {
         round2: { queue: [], currentIndex: -1 },
-        round3: { queue: [], currentIndex: -1 },
       },
     };
   }
@@ -181,7 +179,7 @@
         var clue = cat.clues[row];
         var cell = document.createElement("div");
         cell.className = "clue-cell" + (clue.used ? " used" : "");
-        cell.textContent = clue.used ? "" : "$" + clue.value;
+        cell.textContent = clue.used ? "" : String(clue.value);
         if (!clue.used) {
           // capture row/catIndex per-cell via a bound closure argument (not the loop var)
           cell.addEventListener("click", (function (fixedCat, fixedRow) {
@@ -199,7 +197,7 @@
     if (!clue || clue.used) return;
     activeClue = { catIndex: catIndex, clueIndex: clueIndex, stage: "question" };
     el.clueCategory.textContent = cat.name || "Category";
-    el.clueValue.textContent = "$" + clue.value;
+    el.clueValue.textContent = "Pts " + clue.value;
     el.clueStageLabel.textContent = "Question";
     el.clueText.textContent = clue.question || "(no question entered — add one in Setup)";
     el.revealAnswerBtn.style.display = "";

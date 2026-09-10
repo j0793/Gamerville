@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Game Night — Host Console</title>
+<title>Starry Game Night Extravaganza Ultimate — Host Console</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,20 +18,16 @@
   <header class="topbar">
     <div class="brand">
       <span class="brand-eyebrow">Live at</span>
-      <h1 id="eventTitle" contenteditable="true" spellcheck="false">Are You Smarter Than A Shiba Inu</h1>
+      <h1 id="eventTitle" contenteditable="true" spellcheck="false">Starry Game Night Extravaganza Ultimate</h1>
     </div>
     <nav class="round-tabs" role="tablist">
       <button class="round-pill active" data-round="round1" type="button">
         <span class="round-pill-num">Round 1</span>
-        <span class="round-pill-name">Trivia Board</span>
+        <span class="round-pill-name">Test Your Trivia</span>
       </button>
       <button class="round-pill" data-round="round2" type="button">
         <span class="round-pill-num">Round 2</span>
-        <span class="round-pill-name">Talent Show</span>
-      </button>
-      <button class="round-pill" data-round="round3" type="button">
-        <span class="round-pill-num">Round 3</span>
-        <span class="round-pill-name">Make Some Noise</span>
+        <span class="round-pill-name">Bark, Bark, Bitch</span>
       </button>
       <button class="setup-btn" id="setupBtn" type="button">⚙ Setup</button>
     </nav>
@@ -45,18 +41,18 @@
       <div class="view active" id="boardView">
         <div class="round-banner">
           <span class="brand-eyebrow">Now Running</span>
-          <h2>Round 1 · Test Your Starry Lore</h2>
+          <h2>Round 1 · Test Your Trivia</h2>
         </div>
         <div class="board-frame">
           <div class="board-grid" id="boardGrid"><!-- injected --></div>
         </div>
       </div>
 
-      <!-- ROUNDS 2 & 3: Prompt console -->
+      <!-- ROUND 2: Prompt console -->
       <div class="view" id="promptView">
         <div class="round-banner">
           <span class="brand-eyebrow">Now Running</span>
-          <h2 id="roundBannerTitle">Round 2 · Sit, Bark, Roll Over</h2>
+          <h2 id="roundBannerTitle">Round 2 · Bark, Bark, Bitch</h2>
         </div>
 
         <div class="prompt-columns">
@@ -144,7 +140,7 @@
   <div class="clue-card">
     <div class="clue-top">
       <span class="clue-category" id="clueCategory">Category</span>
-      <span class="clue-value" id="clueValue">$200</span>
+      <span class="clue-value" id="clueValue">Pts 2</span>
     </div>
     <div class="clue-body">
       <p class="clue-stage-label" id="clueStageLabel">Question</p>
@@ -166,7 +162,7 @@
     </div>
 
     <div class="setup-tools">
-      <button id="fillValuesBtn" class="btn btn-ghost btn-small" type="button">Auto-fill values 100–500</button>
+      <button id="fillValuesBtn" class="btn btn-ghost btn-small" type="button">Auto-fill values 1–5</button>
       <button id="exportBoardBtn" class="btn btn-ghost btn-small" type="button">Export board as file</button>
       <button id="importBoardBtn" class="btn btn-ghost btn-small" type="button">Import board from file</button>
       <input type="file" id="importBoardInput" accept="application/json" style="display:none" />
