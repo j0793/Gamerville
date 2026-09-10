@@ -84,6 +84,9 @@ Drawing contest:
 Sell me Your Sole:
 - Host has 30 (Points) dollars to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
 
+Whos line?
+- Who's line is it anyway style comp.
+
 
 - Prompts:
 -- Buttering Toast
