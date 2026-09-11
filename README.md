@@ -1,9 +1,13 @@
 # Starry Game Night Extravaganza Ultimate - Host Outline
 
-**Format:** Round 1 Trivia (Jeopardy-style) -> Round 2 Bark Bark, Bitch
-**Host:** Snooka, X
-**Players:** Starry, Player of Starry's Choice #1, Player of Starry's Choice #2, Player of Starry's Choice #3
-**Tech setup:** Laptop screen-shared to living room TV, host console open in browser
+## Format: 
+- Round 1 Trivia (Jeopardy-style) -> Round 2 Bark Bark, Bitch
+## Host:
+- Snooka, X
+## Players: 
+- Starry, Player of Starry's Choice #1, Player of Starry's Choice #2, Player of Starry's Choice #3
+## Tech setup:
+- Laptop screen-shared to living room TV, host console open in browser
 
 ---
 
@@ -13,22 +17,25 @@
 - [ ] Contestants added to scoreboard
 - [ ] Round 2 prompt queue loaded
 - [ ] Make big tv second monitor
+- [ ] Soundboard setup to cue
+- [ ] Lighting?
+- [ ] Signage to be taped somewhere
+
 
 ---
 
 ## Core Structure:
 
 - Intro
+- Intro X as Jeopardy host
 - Run a round of Jackiepardy
 - Transition Hosts
-- Form teams for next round, teams of [4?] and one team captain.
-- Each member will have a chance to earn points
+- Form teams for next round, teams of [4] and one team captain.
 - Run a round of Improv/Charades
 - Points carry over into the final round.
 
 
 ## Cold Open
-
 
 > "Welcome, everyone, to Starry Game Night Extravaganza Ultimate. Your skills will be tested, your wits might reach their end, who knows.
 
@@ -51,7 +58,7 @@
 **Transition line:** *That's all for this round, hope you all are ready to get this place humid.*
 ---
 
-## Round 2 - Starboard Shennanigans
+## Round 2 - Some Noise Makers
 
 **Structure:** Prompt-based challenges (charades), judged by the host.
 
@@ -75,21 +82,19 @@
 - Points awarded to team if the final guess is close, or just give points based on funsies.
 
 **Seed prompts**
-A cat stuck in a dryer
-The DMV on a Monday morning
-A printer running out of paper
-A seagull stealing a sandwich
-Grandma using a smartphone for the first time
-A ghost trying to pay with a credit card
-A dinosaur doing yoga
-Someone stepping on a Lego
-A robot falling in love
-A raccoon in a trench coat
-A wedding that's running late
-A vampire at the DMV
-A toddler ordering at a drive-thru
-Two skeletons fighting over a parking spot
-A mermaid taking a driving test
+- Cat stuck in a dryer
+- The DMV on a Monday morning
+- A printer running out of paper
+- A seagull stealing a sandwich
+- Grandma using a smartphone for the first time
+- A ghost trying to pay with a credit card
+- A dinosaur doing yoga
+- Someone stepping on a Lego
+- A robot falling in love
+- A raccoon in a trench coat
+- A toddler ordering at a drive-thru
+
+
 
 
 
