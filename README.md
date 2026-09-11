@@ -27,7 +27,7 @@
 ## Core Structure:
 
 - Intro
-- Intro X as Jeopardy host (?)
+- Intro X as Jeopardy host
 - Run a round of Jackiepardy
 - Transition Hosts
 - Form teams for next round, teams of [4] and one team captain.
@@ -125,7 +125,7 @@
 
 
 ## Sell me Your Sole:
-- Host has 30 (Points) dollars to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
+- Host has 30 (Points) dollar s to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
 
 **Items to Sell**
 - A single sock
