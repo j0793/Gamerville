@@ -28,7 +28,6 @@
       ],
       activeRound: "round1",
       onTheSpotId: "",
-      judgedBy: "",
       timerSeconds: 60,
       roundTitles: {
         round1: "Test Your Trivia",
@@ -86,7 +85,6 @@
 
     promptDisplayText: document.getElementById("promptDisplayText"),
     onTheSpotDisplay: document.getElementById("onTheSpotDisplay"),
-    judgedByDisplay: document.getElementById("judgedByDisplay"),
 
     prevPromptBtn: document.getElementById("prevPromptBtn"),
     nextPromptBtn: document.getElementById("nextPromptBtn"),
@@ -97,7 +95,6 @@
     queueList: document.getElementById("queueList"),
 
     onTheSpotSelect: document.getElementById("onTheSpotSelect"),
-    judgedByInput: document.getElementById("judgedByInput"),
 
     timerDisplay: document.getElementById("timerDisplay"),
     timerSecondsInput: document.getElementById("timerSecondsInput"),
@@ -328,7 +325,7 @@
       el.queueList.appendChild(li);
     });
 
-    // on the spot / judged by
+    // on the spot
     el.onTheSpotSelect.innerHTML = '<option value="">— none —</option>';
     state.contestants.forEach(function (c) {
       var opt = document.createElement("option");
@@ -339,9 +336,6 @@
     });
     var onSpot = state.contestants.filter(function (c) { return c.id === state.onTheSpotId; })[0];
     el.onTheSpotDisplay.textContent = onSpot ? onSpot.name : "—";
-
-    el.judgedByInput.value = state.judgedBy || "";
-    el.judgedByDisplay.textContent = state.judgedBy || "—";
   }
 
   el.addToQueueBtn.addEventListener("click", function () {
@@ -379,12 +373,6 @@
     saveState();
     renderPromptConsole();
   });
-
-  el.judgedByInput.addEventListener("input", function () {
-    state.judgedBy = el.judgedByInput.value;
-    el.judgedByDisplay.textContent = state.judgedBy || "—";
-  });
-  el.judgedByInput.addEventListener("blur", saveState);
 
   // ---------- Timer ----------
 

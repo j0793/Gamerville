@@ -11,6 +11,17 @@
 </head>
 <body>
 
+<div class="scoreboard-bar" id="scoreboardBar">
+  <div class="scoreboard-bar-inner">
+    <h2 class="scoreboard-bar-title">Scoreboard</h2>
+    <div class="add-contestant">
+      <input id="newContestantName" type="text" placeholder="Add contestant…" />
+      <button id="addContestantBtn" class="btn btn-gold btn-small" type="button">Add</button>
+    </div>
+    <ul class="contestant-list" id="contestantList"><!-- injected --></ul>
+  </div>
+</div>
+
 <div class="stage-glow"></div>
 
 <div class="app">
@@ -67,10 +78,6 @@
                     <span class="meta-label">On the spot</span>
                     <span class="meta-value" id="onTheSpotDisplay">—</span>
                   </div>
-                  <div class="meta-item">
-                    <span class="meta-label">Judged by</span>
-                    <span class="meta-value" id="judgedByDisplay">—</span>
-                  </div>
                 </div>
               </div>
 
@@ -82,6 +89,9 @@
                   <button id="timerStartBtn" class="btn btn-gold btn-small" type="button">Start</button>
                   <button id="timerResetBtn" class="btn btn-ghost btn-small" type="button">Reset</button>
                 </div>
+
+                <label class="field-label" style="margin-top:14px;" for="onTheSpotSelect">On the spot</label>
+                <select id="onTheSpotSelect"><option value="">— none —</option></select>
               </div>
             </div>
 
@@ -102,14 +112,6 @@
             </div>
 
             <div class="side-block">
-              <label class="field-label" for="onTheSpotSelect">On the spot</label>
-              <select id="onTheSpotSelect"><option value="">— none —</option></select>
-
-              <label class="field-label" style="margin-top:12px;" for="judgedByInput">Judged by</label>
-              <input id="judgedByInput" type="text" placeholder="e.g. the room votes" />
-            </div>
-
-            <div class="side-block">
               <label class="field-label" for="awardAmount">Award points</label>
               <div class="award-row">
                 <input id="awardAmount" type="number" value="100" />
@@ -122,17 +124,6 @@
       </div>
 
     </section>
-
-    <aside class="scoreboard">
-      <div class="scoreboard-head">
-        <h2>Scoreboard</h2>
-      </div>
-      <div class="add-contestant">
-        <input id="newContestantName" type="text" placeholder="Add contestant…" />
-        <button id="addContestantBtn" class="btn btn-gold btn-small" type="button">Add</button>
-      </div>
-      <ul class="contestant-list" id="contestantList"><!-- injected --></ul>
-    </aside>
 
   </main>
 </div>
