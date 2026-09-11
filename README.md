@@ -76,8 +76,8 @@
 - Seed the chain with a secret word or phrase
 - Player 1 has 30 seconds to draw it, no letters, no numbers.
 - Player 2 looks at the drawing, has 15 seconds to come up with a sound based on what they think it depics. No words, just sounds/acting
-- Player 3 hears only the sound
-- Player 4 announces their final guess out loud.
+- Player 3 hears only the sound, writes down their guess.
+- Team captain announces their final guess out loud.
 - Reveal chain. 
 - Points awarded to team if the final guess is close, or just give points based on funsies.
 
@@ -155,7 +155,7 @@
 - Host podium
 - Wear blazer
 - Get whiteboards (3)
-- Soundboard
+- Soundboard**
 
 
 
