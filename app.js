@@ -10,7 +10,7 @@
     return {
       name: name || "Category",
       clues: DEFAULT_VALUES.map(function (v) {
-        return { value: v, question: "", answer: "", used: false };
+        return { value: v, question: "", answer: "", used: false, isDailyDouble: false };
       }),
     };
   }
@@ -112,6 +112,8 @@
     contestantList: document.getElementById("contestantList"),
 
     clueOverlay: document.getElementById("clueOverlay"),
+    clueCard: document.getElementById("clueCard"),
+    dailyDoubleBanner: document.getElementById("dailyDoubleBanner"),
     clueCategory: document.getElementById("clueCategory"),
     clueValue: document.getElementById("clueValue"),
     clueStageLabel: document.getElementById("clueStageLabel"),
@@ -240,6 +242,8 @@
     el.clueStageLabel.textContent = "Question";
     el.clueText.textContent = clue.question || "(no question entered — add one in Setup)";
     el.revealAnswerBtn.style.display = "";
+    el.dailyDoubleBanner.style.display = clue.isDailyDouble ? "block" : "none";
+    el.clueCard.classList.toggle("dd-active", !!clue.isDailyDouble);
     el.clueOverlay.classList.add("active");
   }
 
@@ -261,12 +265,14 @@
       renderBoard();
     }
     activeClue = null;
+    el.clueCard.classList.remove("dd-active");
     el.clueOverlay.classList.remove("active");
   });
 
   el.clueOverlay.addEventListener("click", function (e) {
     if (e.target === el.clueOverlay) {
       activeClue = null;
+      el.clueCard.classList.remove("dd-active");
       el.clueOverlay.classList.remove("active");
     }
   });
@@ -621,7 +627,7 @@
         return {
           name: cat.name,
           clues: cat.clues.map(function (cl) {
-            return { value: cl.value, question: cl.question, answer: cl.answer };
+            return { value: cl.value, question: cl.question, answer: cl.answer, isDailyDouble: !!cl.isDailyDouble };
           }),
         };
       }),
@@ -664,16 +670,28 @@
               question: cl.question || "",
               answer: cl.answer || "",
               used: false,
+              isDailyDouble: !!cl.isDailyDouble,
             };
           });
           while (clues.length < 5) {
-            clues.push({ value: DEFAULT_VALUES[clues.length], question: "", answer: "", used: false });
+            clues.push({ value: DEFAULT_VALUES[clues.length], question: "", answer: "", used: false, isDailyDouble: false });
           }
           return { name: cat.name || "Category", clues: clues };
         });
         while (state.categories.length < 5) {
           state.categories.push(defaultCategory("Category " + (state.categories.length + 1)));
         }
+
+        // enforce at most one Daily Double, in case the file had more than one flagged
+        var ddSeen = false;
+        state.categories.forEach(function (c) {
+          c.clues.forEach(function (cl) {
+            if (cl.isDailyDouble) {
+              if (ddSeen) cl.isDailyDouble = false;
+              ddSeen = true;
+            }
+          });
+        });
 
         if (data.roundTitles) {
           state.roundTitles.round1 = data.roundTitles.round1 || state.roundTitles.round1;
@@ -742,6 +760,27 @@
         });
         valueField.appendChild(valueLabel);
         valueField.appendChild(valueInput);
+
+        var ddLabel = document.createElement("label");
+        ddLabel.className = "dd-toggle";
+        var ddCheckbox = document.createElement("input");
+        ddCheckbox.type = "checkbox";
+        ddCheckbox.checked = !!clue.isDailyDouble;
+        ddCheckbox.addEventListener("change", function () {
+          if (ddCheckbox.checked) {
+            state.categories.forEach(function (c) {
+              c.clues.forEach(function (cl) { cl.isDailyDouble = false; });
+            });
+            clue.isDailyDouble = true;
+          } else {
+            clue.isDailyDouble = false;
+          }
+          saveState();
+          renderSetup();
+        });
+        ddLabel.appendChild(ddCheckbox);
+        ddLabel.appendChild(document.createTextNode(" DD"));
+        valueField.appendChild(ddLabel);
 
         var questionField = document.createElement("div");
         questionField.style.flex = "1";

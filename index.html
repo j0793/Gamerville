@@ -137,7 +137,8 @@
 
 <!-- Clue reveal overlay -->
 <div class="overlay" id="clueOverlay">
-  <div class="clue-card">
+  <div class="clue-card" id="clueCard">
+    <div class="dd-banner" id="dailyDoubleBanner" style="display:none;">🎯 Daily Double!</div>
     <div class="clue-top">
       <span class="clue-category" id="clueCategory">Category</span>
       <span class="clue-value" id="clueValue">Pts 2</span>
@@ -182,6 +183,7 @@
     </div>
 
     <div class="setup-categories" id="setupCategories"><!-- injected --></div>
+    <p class="setup-hint">Check <strong>DD</strong> next to one clue to mark it the Daily Double. It looks identical to every other tile on the board — only the host sees a "Daily Double!" banner when it's revealed.</p>
   </div>
 </div>
 
