@@ -27,7 +27,7 @@
 ## Core Structure:
 
 - Intro
-- Intro X as Jeopardy host
+- Intro X as Jeopardy host (?)
 - Run a round of Jackiepardy
 - Transition Hosts
 - Form teams for next round, teams of [4] and one team captain.
@@ -95,63 +95,29 @@
 - A toddler ordering at a drive-thru
 
 
-
-
-
+## Additional Lightning Rounds:
 **Prompts**:
 (puttin down base ideas, change these to StarryCore)
 
-Some Noise Makers
-- Make some noise/noise some makes style debauchery
 
-Emotional rollercoaster:
+## Emotional rollercoaster:
 - I will give an activity to act out. I will call out emotions every (15-20) seconds, adjust your acting.
 
-Press conference:
-- You all will be the board of directors, defend your corporate honor from my judgement.
+**Prompts**
+- Buttering Toast
+- Assembling Furniture
 
-Living statue:
-- Prompt says pose, team leader makes it, teams bid on pose.
-
-Drawing contest:
-- Draw based on a prompt, host judges. Can be only team captain or they can elect someone to draw. 
-- One dry erase board per team
-
-Sell me Your Sole:
-- Host has 30 (Points) dollars to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
-
-Whos line?
-- Who's line is it anyway style comp.
-
-
-- Prompts:
--- Buttering Toast
--- Assembling Furniture
-- Emotions:
+**Emotions**
 - Angry
 - Happy
 - Heartbroken
 
 
-- Drawing Prompts:
-- Choose between these prompts for drawing:
-- Draw a block of cheese.
-- Draw a mouse.
-- Draw a hippo.
-- Draw a spongebob.
-- Draw a patrick (spongebob).
-- Draw a maneki neko (lucky cat)
-- Draw a fox.
-- Draw a shiba.
-- Draw a birthday cake.
-- Draw a jack frost.
-- Draw a kirby.
-- Draw mario.
-- Draw a Link.
-- Draw a Zelda.
-- Draw a hamburger.
-- Draw a hollow knight.
-- Draw a hornet (silksong)
+## Sell me Your Sole:
+- Host has 30 (Points) dollars to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
+
+**Items to Sell**
+
 
 ## Wrap-Up
 > "Let's check the board."
