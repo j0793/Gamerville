@@ -20,10 +20,11 @@
 
 - Intro
 - Run a round of Jackiepardy
+- Transition Hosts
 - Form teams for next round, teams of [4?] and one team captain.
 - Each member will have a chance to earn points
-- Run a round of Noise some Makes
-- Points carry over into each round
+- Run a round of Improv/Charades
+- Points carry over into the final round.
 
 
 ## Cold Open
@@ -50,7 +51,7 @@
 **Transition line:** *That's all for this round, hope you all are ready to get this place humid.*
 ---
 
-## Round 2 - Talent Show/Noise Some Makes
+## Round 2 - Starboard Shennanigans
 
 **Structure:** Prompt-based challenges (charades), judged by the host.
 
@@ -64,9 +65,39 @@
 - Start the timer when the prompt is shown
 - Use **Award to on-the-spot** to give points once judging is done
 
+**Rules of Engagement**
+- Seed the chain with a secret word or phrase
+- Player 1 has 30 seconds to draw it, no letters, no numbers.
+- Player 2 looks at the drawing, has 15 seconds to come up with a sound based on what they think it depics. No words, just sounds/acting
+- Player 3 hears only the sound
+- Player 4 announces their final guess out loud.
+- Reveal chain. 
+- Points awarded to team if the final guess is close, or just give points based on funsies.
+
+**Seed prompts**
+A cat stuck in a dryer
+The DMV on a Monday morning
+A printer running out of paper
+A seagull stealing a sandwich
+Grandma using a smartphone for the first time
+A ghost trying to pay with a credit card
+A dinosaur doing yoga
+Someone stepping on a Lego
+A robot falling in love
+A raccoon in a trench coat
+A wedding that's running late
+A vampire at the DMV
+A toddler ordering at a drive-thru
+Two skeletons fighting over a parking spot
+A mermaid taking a driving test
+
+
+
 **Prompts**:
 (puttin down base ideas, change these to StarryCore)
 
+Some Noise Makers
+- Make some noise/noise some makes style debauchery
 
 Emotional rollercoaster:
 - I will give an activity to act out. I will call out emotions every (15-20) seconds, adjust your acting.
@@ -116,8 +147,6 @@ Whos line?
 - Draw a hamburger.
 - Draw a hollow knight.
 - Draw a hornet (silksong)
-
-
 
 ## Wrap-Up
 > "Let's check the board."

@@ -680,6 +680,28 @@ body{
   margin:0;
 }
 
+.setup-round-titles{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.setup-round-title-field{
+  flex:1;
+  min-width:220px;
+}
+.setup-round-title-field input{
+  width:100%;
+  background: var(--stage-bg);
+  border:1px solid var(--line);
+  border-radius:8px;
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:14px;
+  padding:9px 10px;
+}
+.setup-round-title-field input:focus{ outline:2px solid var(--gold); }
+
 .setup-tools{
   display:flex;
   gap:10px;

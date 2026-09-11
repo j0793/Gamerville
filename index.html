@@ -41,7 +41,7 @@
       <div class="view active" id="boardView">
         <div class="round-banner">
           <span class="brand-eyebrow">Now Running</span>
-          <h2>Round 1 · Test Your Trivia</h2>
+          <h2 id="round1BannerTitle">Round 1 · Test Your Trivia</h2>
         </div>
         <div class="board-frame">
           <div class="board-grid" id="boardGrid"><!-- injected --></div>
@@ -161,10 +161,21 @@
       <button id="closeSetupBtn" class="btn btn-ghost btn-small" type="button">Done</button>
     </div>
 
+    <div class="setup-round-titles">
+      <div class="setup-round-title-field">
+        <label class="field-label" for="round1TitleInput">Round 1 title</label>
+        <input id="round1TitleInput" type="text" placeholder="e.g. Test Your Trivia" />
+      </div>
+      <div class="setup-round-title-field">
+        <label class="field-label" for="round2TitleInput">Round 2 title</label>
+        <input id="round2TitleInput" type="text" placeholder="e.g. Bark, Bark, Bitch" />
+      </div>
+    </div>
+
     <div class="setup-tools">
       <button id="fillValuesBtn" class="btn btn-ghost btn-small" type="button">Auto-fill values 1–5</button>
-      <button id="exportBoardBtn" class="btn btn-ghost btn-small" type="button">Export board as file</button>
-      <button id="importBoardBtn" class="btn btn-ghost btn-small" type="button">Import board from file</button>
+      <button id="exportBoardBtn" class="btn btn-ghost btn-small" type="button">Export board &amp; prompts as file</button>
+      <button id="importBoardBtn" class="btn btn-ghost btn-small" type="button">Import board &amp; prompts from file</button>
       <input type="file" id="importBoardInput" accept="application/json" style="display:none" />
       <button id="resetUsedBtn" class="btn btn-danger btn-small" type="button">Mark all clues unused</button>
       <button id="resetBoardBtn" class="btn btn-danger btn-small" type="button">Reset entire board</button>

@@ -3,9 +3,6 @@
 
   var STORAGE_KEY = "gameNightState_v3";
   var DEFAULT_VALUES = [1, 2, 3, 4, 5];
-  var ROUND_LABELS = {
-    round2: "Round 2 · Bark, Bark, Bitch",
-  };
 
   // ---------- State ----------
 
@@ -33,6 +30,10 @@
       onTheSpotId: "",
       judgedBy: "",
       timerSeconds: 60,
+      roundTitles: {
+        round1: "Test Your Trivia",
+        round2: "Bark, Bark, Bitch",
+      },
       rounds: {
         round2: { queue: [], currentIndex: -1 },
       },
@@ -40,6 +41,10 @@
   }
 
   var state = loadState();
+  // migration guard for state saved before round titles were editable
+  if (!state.roundTitles) {
+    state.roundTitles = { round1: "Test Your Trivia", round2: "Bark, Bark, Bitch" };
+  }
 
   function loadState() {
     try {
@@ -74,7 +79,10 @@
     boardView: document.getElementById("boardView"),
     promptView: document.getElementById("promptView"),
     boardGrid: document.getElementById("boardGrid"),
+    round1BannerTitle: document.getElementById("round1BannerTitle"),
     roundBannerTitle: document.getElementById("roundBannerTitle"),
+    round1PillName: document.querySelector('.round-pill[data-round="round1"] .round-pill-name'),
+    round2PillName: document.querySelector('.round-pill[data-round="round2"] .round-pill-name'),
 
     promptDisplayText: document.getElementById("promptDisplayText"),
     onTheSpotDisplay: document.getElementById("onTheSpotDisplay"),
@@ -121,9 +129,40 @@
     exportBoardBtn: document.getElementById("exportBoardBtn"),
     importBoardBtn: document.getElementById("importBoardBtn"),
     importBoardInput: document.getElementById("importBoardInput"),
+    round1TitleInput: document.getElementById("round1TitleInput"),
+    round2TitleInput: document.getElementById("round2TitleInput"),
   };
 
   var activeClue = null; // { catIndex, clueIndex, stage: 'question'|'answer' }
+
+  // ---------- Round titles ----------
+
+  function renderRoundTitles() {
+    el.round1PillName.textContent = state.roundTitles.round1;
+    el.round2PillName.textContent = state.roundTitles.round2;
+    el.round1BannerTitle.textContent = "Round 1 · " + state.roundTitles.round1;
+    if (state.activeRound === "round2") {
+      el.roundBannerTitle.textContent = "Round 2 · " + state.roundTitles.round2;
+    }
+  }
+
+  el.round1TitleInput.addEventListener("input", function () {
+    state.roundTitles.round1 = el.round1TitleInput.value;
+  });
+  el.round1TitleInput.addEventListener("blur", function () {
+    state.roundTitles.round1 = state.roundTitles.round1.trim() || "Test Your Trivia";
+    saveState();
+    renderRoundTitles();
+  });
+
+  el.round2TitleInput.addEventListener("input", function () {
+    state.roundTitles.round2 = el.round2TitleInput.value;
+  });
+  el.round2TitleInput.addEventListener("blur", function () {
+    state.roundTitles.round2 = state.roundTitles.round2.trim() || "Bark, Bark, Bitch";
+    saveState();
+    renderRoundTitles();
+  });
 
   // ---------- Round navigation ----------
 
@@ -146,7 +185,7 @@
     } else {
       el.boardView.classList.remove("active");
       el.promptView.classList.add("active");
-      el.roundBannerTitle.textContent = ROUND_LABELS[state.activeRound];
+      renderRoundTitles();
       renderPromptConsole();
     }
   }
@@ -586,6 +625,11 @@
           }),
         };
       }),
+      roundTitles: {
+        round1: state.roundTitles.round1,
+        round2: state.roundTitles.round2,
+      },
+      round2Queue: state.rounds.round2.queue.slice(),
     };
     var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     var url = URL.createObjectURL(blob);
@@ -630,9 +674,21 @@
         while (state.categories.length < 5) {
           state.categories.push(defaultCategory("Category " + (state.categories.length + 1)));
         }
+
+        if (data.roundTitles) {
+          state.roundTitles.round1 = data.roundTitles.round1 || state.roundTitles.round1;
+          state.roundTitles.round2 = data.roundTitles.round2 || state.roundTitles.round2;
+        }
+        if (Array.isArray(data.round2Queue)) {
+          state.rounds.round2.queue = data.round2Queue.slice();
+          state.rounds.round2.currentIndex = state.rounds.round2.queue.length ? 0 : -1;
+        }
+
         saveState();
         renderSetup();
         renderBoard();
+        renderRoundTitles();
+        if (state.activeRound === "round2") renderPromptConsole();
       } catch (err) {
         alert("Couldn't read that file as a board template. Make sure it's a JSON file exported from this app.");
       }
@@ -642,6 +698,9 @@
   });
 
   function renderSetup() {
+    el.round1TitleInput.value = state.roundTitles.round1;
+    el.round2TitleInput.value = state.roundTitles.round2;
+
     el.setupCategories.innerHTML = "";
     state.categories.forEach(function (cat, catIndex) {
       var wrap = document.createElement("div");
@@ -734,5 +793,6 @@
 
   renderBoard();
   renderContestants();
+  renderRoundTitles();
   updateRoundUI();
 })();
