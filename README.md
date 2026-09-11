@@ -95,9 +95,8 @@
 - A toddler ordering at a drive-thru
 
 
-## Additional Lightning Rounds:
-**Prompts**:
-(puttin down base ideas, change these to StarryCore)
+## Additional Lightning Rounds(only use if needed):
+
 
 
 ## Emotional rollercoaster:
@@ -119,7 +118,7 @@
 - Smug
 - Exhausted
 - Flirtatious
-- Boredg
+- Bored
 - Starstruck
 - Heroic
 - Regretful
