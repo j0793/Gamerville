@@ -119,7 +119,7 @@
 - Smug
 - Exhausted
 - Flirtatious
-- Bored
+- Boredg
 - Starstruck
 - Heroic
 - Regretful
@@ -129,7 +129,18 @@
 - Host has 30 (Points) dollars to spend this round. You'll need to pitch the item, name it's price, and keep me entertained or else I'll seek another buyer.
 
 **Items to Sell**
-
+- A single sock
+- An expired coupon
+- One earbud
+- Your shadow
+- An empty picture frame
+- A rock that has a very particular shape to it
+- Monday mornings
+- A gently used toothbrush
+- One chopstick
+- A haunted houseplant
+- A gigantic candy bar
+- A timeshare on the moon
 
 ## Wrap-Up
 > "Let's check the board."
