@@ -62,7 +62,7 @@
 
 **Structure:** Prompt-based challenges (charades), judged by the host.
 
-> New round, new rules. I'm going to give you a prompt, you've got [60?] seconds, you will be judged.
+> New round, new rules. It's time to become Some Noise Makers. But here's the catch, only one person on your team will be allowed to make noise.
 
 **Host notes:**
 - Switch app to **Round 2 - Talent Show** tab
@@ -72,7 +72,7 @@
 - Start the timer when the prompt is shown
 - Use **Award to on-the-spot** to give points once judging is done
 
-**Rules of Engagement**
+**Rules of Engagement** 
 - Seed the chain with a secret word or phrase
 - Player 1 has 30 seconds to draw it, no letters, no numbers.
 - Player 2 looks at the drawing, has 15 seconds to come up with a sound based on what they think it depics. No words, just sounds/acting
@@ -106,11 +106,23 @@
 **Prompts**
 - Buttering Toast
 - Assembling Furniture
+- Folding laundry
+- Digging a grave
+- Finding out you won the lottery
+- Standing in an elevator
 
 **Emotions**
-- Angry
-- Happy
+- Furious
+- Suspicious
 - Heartbroken
+- Nostalgic
+- Smug
+- Exhausted
+- Flirtatious
+- Bored
+- Starstruck
+- Heroic
+- Regretful
 
 
 ## Sell me Your Sole:
@@ -127,6 +139,13 @@
 ## Notes:
 - Decorate the house like a game show
 - Make some contenstant podiums
+- Make signage with poster board
+- Get streamers from dollar store
+- Painters tape, double sided tape
+- Host podium
+- Wear blazer
+- Get whiteboards (3)
+- Soundboard
 
 
 
