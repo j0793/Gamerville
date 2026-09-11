@@ -92,6 +92,12 @@
 
                 <label class="field-label" style="margin-top:14px;" for="onTheSpotSelect">On the spot</label>
                 <select id="onTheSpotSelect"><option value="">— none —</option></select>
+
+                <label class="field-label" style="margin-top:14px;" for="awardAmount">Award points</label>
+                <div class="award-row">
+                  <input id="awardAmount" type="number" value="100" />
+                  <button id="awardPointsBtn" class="btn btn-gold btn-small" type="button">Award to on-the-spot</button>
+                </div>
               </div>
             </div>
 
@@ -109,14 +115,6 @@
               <textarea id="promptQueueInput" rows="3" placeholder="A raccoon filing taxes&#10;The sound of regret"></textarea>
               <button id="addToQueueBtn" class="btn btn-gold btn-small" type="button">+ Add to queue</button>
               <ul class="queue-list" id="queueList"><!-- injected --></ul>
-            </div>
-
-            <div class="side-block">
-              <label class="field-label" for="awardAmount">Award points</label>
-              <div class="award-row">
-                <input id="awardAmount" type="number" value="100" />
-                <button id="awardPointsBtn" class="btn btn-gold btn-small" type="button">Award to on-the-spot</button>
-              </div>
             </div>
 
           </div>
